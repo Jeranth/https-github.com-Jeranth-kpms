@@ -8,7 +8,7 @@ import { Button } from '@/Components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/Components/ui/dialog';
 import { RadioGroup, RadioGroupItem } from '@/Components/ui/radio-group';
 import { Label } from '@/Components/ui/label';
-import { Separator } from '@/components/ui/separator';
+import { Separator } from '@/Components/ui/separator';
 import axios from 'axios';
 import { AuthContext } from '@/context/auth-context';
 import { useRouter } from 'next/navigation';

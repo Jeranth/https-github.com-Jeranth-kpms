@@ -41,7 +41,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const corsOptions = {
   credentials: true,
-  origin: ['http://localhost:3001', 'http://localhost:4000', 'http://localhost:3000']
+  origin: ['http://localhost:3001', 'http://localhost:4000', 'http://localhost:3000','https://dynamiccalendar-frontend-d6bfhkgafehxg5c7.southeastasia-01.azurewebsites.net']
 }
 
 app.use(cors(corsOptions));

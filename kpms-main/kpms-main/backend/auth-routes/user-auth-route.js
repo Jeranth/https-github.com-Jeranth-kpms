@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
 const router = express.Router();
 
 const findUserById = async (id) => {
-  let user = await prisma.patients.findUnique({ where: { patient_id: id } });
+  /*let user = await prisma.patients.findUnique({ where: { patient_id: id } });
   if (user) return { user, role: 'patient' };
 
   user = await prisma.radiologists.findUnique({ where: { radiologist_id: id } });
@@ -19,8 +19,8 @@ const findUserById = async (id) => {
 
   user = await prisma.receptionists.findUnique({ where: { receptionist_id: id } });
   if (user) return { user, role: 'receptionist' };
-
-  user = await prisma.admins.findUnique({ where: { admin_id: id } });
+*/
+  let user = await prisma.admins.findUnique({ where: { admin_id: id } });
   if (user) return { user, role: 'admin' };
 
   return { user: null, role: null };

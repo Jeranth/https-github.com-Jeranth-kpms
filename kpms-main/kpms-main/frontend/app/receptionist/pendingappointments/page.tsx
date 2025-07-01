@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useContext } from 'react'
 import { useRouter } from 'next/navigation'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/Components/ui/input'
 import { Button } from '@/Components/ui/button'
 import { Card, CardContent } from '@/Components/ui/card'
 import { Search, Phone, Mail, Calendar, Clock, User } from 'lucide-react'

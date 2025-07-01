@@ -46,9 +46,11 @@ router.post('/', /* authenticateToken, */ async (req, res) => {
       data: { admin_id, password: hashedPassword },
     });
     res.status(201).json(newAdmin);
-  } catch {
+  } catch(err) {
+    console.log(err);
     res.status(500).json({ error: 'Failed to create admin' });
   }
+  
 });
 
 router.put('/:admin_id', /* authenticateToken, */ async (req, res) => {

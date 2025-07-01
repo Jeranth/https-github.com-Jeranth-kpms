@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Loading } from "@/components/ui/loading"
+import { Button } from "@/Components/ui/button"
+import { Loading } from "@/Components/ui/loading"
 import { ButtonHTMLAttributes } from "react"
 import { forwardRef } from "react"
 

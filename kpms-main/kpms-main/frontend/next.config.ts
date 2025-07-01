@@ -1,30 +1,36 @@
 import type { NextConfig } from "next";
-
+ 
 const nextConfig: NextConfig = {
-  //output: 'export',
-
   images: {
     unoptimized: true,
   },
   eslint: {
-    ignoreDuringBuilds: true, // Disable ESLint during build
+    ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true, // Disable TypeScript errors during build
+    ignoreBuildErrors: true,
   },
-  webpack: (config, { isServer }) => {
-    // Add custom Webpack configuration to ignore case sensitivity warnings
+  webpack: (config) => {
     config.ignoreWarnings = [
       {
-        module: /node_modules/, // Ignore node_modules warnings
+        module: /node_modules/,
       },
       {
-        file: /.*/, // Ignore all files
+        file: /.*/,
         message: /There are multiple modules with names that only differ in casing/,
       },
     ];
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*", // All requests to /api/* on frontend
+        destination:
+          "https://dynamiccalendar-backend-fhd9hdhgb2atf3bx.southeastasia-01.azurewebsites.net/:path*", // Proxied to backend
+      },
+    ];
+  },
 };
-
+ 
 export default nextConfig;

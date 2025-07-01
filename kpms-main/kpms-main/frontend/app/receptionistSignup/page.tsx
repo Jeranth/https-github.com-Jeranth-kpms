@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ArrowLeft, User, Mail, Phone, Upload, X, Camera } from 'lucide-react';
 import { Button } from '@/Components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/Components/ui/input';
 import { Label } from '@/Components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/Components/ui/card';
 import { Progress } from '@/Components/ui/progress';

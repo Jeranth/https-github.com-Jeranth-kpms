@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Plus, Edit, Trash2, X, Phone, Mail, MapPin, User, Calendar, Droplets, Search } from 'lucide-react';
 import { Button } from '@/Components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/Components/ui/input';
 import { Label } from '@/Components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/Components/ui/select';
 import { Textarea } from '@/Components/ui/textarea';

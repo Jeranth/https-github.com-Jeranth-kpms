@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect, use } from 'react';
 import { Search, Clock, Phone, Mail, MapPin } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/Components/ui/card';
+import { Input } from '@/Components/ui/input';
+import { Badge } from '@/Components/ui/badge';
 import { useParams } from 'next/navigation';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/Components/ui/avatar';
 
 import axios from 'axios';
 
